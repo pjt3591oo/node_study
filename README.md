@@ -4,8 +4,8 @@
 
 ## 주차별 강의 바로가기
 
-[1주차 바로가기](https://github.com/pjt3591oo/node_study/1주차)
+[1주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/1주차)
 
-[2주차 바로가기](https://github.com/pjt3591oo/node_study/2주차)
+[2주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/2주차)
 
-[3주차 바로가기](https://github.com/pjt3591oo/node_study/3주차)
+[3주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/3주차)
