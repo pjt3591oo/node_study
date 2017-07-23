@@ -35,7 +35,7 @@ router.post('/', function(req, res, next) {
 });
 
 // params 연습
-router.get('/:a/:b', function(req, res, next) {
+router.get('/:a/:b/asd', function(req, res, next) {
        console.log(req.params);
        console.log(req.params['a']);
        console.log(req.params['b']);
