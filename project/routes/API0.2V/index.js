@@ -1,10 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var db = require('./db');
-var users = require('./users');
+const post = require('./post');
 
-router.use('/db', db)
-router.use('/users', users)
+router.use('/post', post);
 
 module.exports = router;

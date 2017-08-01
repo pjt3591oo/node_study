@@ -7,7 +7,7 @@ var  router = express.Router();
 // jade 연습1
 router.get('/jadetest1', function(req, res, next) {
     // get, post, put, delete
-
+    
     res.render('test');
 });
 
