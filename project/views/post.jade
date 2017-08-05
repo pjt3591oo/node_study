@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+head
+    style(type='text/css').
+
+        table{
+            margin: auto;
+            width: 100%;
+        }
+
+        table,
+        td,
+        th{
+            border : 1px solid #000;
+        }
+
+        table tr td{
+            cursor: pointer;
+        }
+
+        table tr td,
+        table tr th{
+            width: 33%;
+        }
+
+body
+    table
+        tr
+            th id
+            th title
+            th author
+
+        - for (var index in postList)
+            tr
+                td #{postList[index]['id']}
+                td #{postList[index]['title']}
+                td #{postList[index]['author']}
+
+    a(href="/APIV0.2/post/edit") 글쓰기 페이지로
