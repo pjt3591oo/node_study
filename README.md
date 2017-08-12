@@ -13,3 +13,7 @@
 [4주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/4주차)
 
 [5주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/5주차)
+
+[6주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/6주차)
+
+[7주차 바로가기](https://github.com/pjt3591oo/node_study/tree/master/7주차)
