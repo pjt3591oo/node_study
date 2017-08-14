@@ -7,9 +7,21 @@
 
 let fs = require('fs');
 
+function read4(){
+    fs.readFile('c4.txt', function(err, f2){
+        console.log(f2.toString());
+    })
+}
+function read3(){
+    fs.readFile('c3.txt', function(err, f2){
+        console.log(f2.toString());
+        read4();
+    })
+}
 function read2(){
     fs.readFile('c2.txt', function(err, f2){
         console.log(f2.toString());
+        read3();
     })
 }
 

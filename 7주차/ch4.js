@@ -8,7 +8,7 @@ let fs = require('fs');
 
 function readfile(filename){
 
-    return new Promise( (resolve, reject) => {
+    return new Promise( function(resolve, reject) {
         fs.readFile(filename, function(err, data){
             if(err) reject(err);
             resolve(data.toString());
@@ -17,8 +17,7 @@ function readfile(filename){
 
 }
 
-
-Promise.all([readfile('c1.txt'), readfile('c2.txt')]).then( result => {
+Promise.all([readfile('c1.txt'), readfile('c2.txt')]).then( function(result) {
     console.log(result);
 }, err => {
     console.log(err);
