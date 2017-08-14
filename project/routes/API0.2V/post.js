@@ -41,8 +41,6 @@ router.get('/edit/:id', function(req, res){
 			content: data[0]['content'],
 			author: data[0]['author']
 		});
-
-
 	})
 })
 
@@ -74,10 +72,12 @@ router.post('/modi', function(req, res){
 
 })
 
-router.delete('/', function(req, res){
-    let postId = req.body.postId;
-    // 'DELETE FROM board WHERE id=?', [postId]
-    res.send('delete test');
+router.get('/delete/:id', function(req, res){
+    let postId = req.params.id;
+    let sql = 'DELETE FROM board WHERE id=?';
+	client.query(sql, [postId], function(err){
+		res.redirect('/APIV0.2/post');
+	});
 })
 
 router.get('/:id/post', function(req, res){

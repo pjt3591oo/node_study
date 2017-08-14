@@ -29,11 +29,21 @@ body
             th id
             th title
             th author
+            th 수정
+            th 삭제
 
         - for (var index in postList)
             tr
                 td #{postList[index]['id']}
                 td #{postList[index]['title']}
                 td #{postList[index]['author']}
+
+                td
+                    a(href="/APIV0.2/post/edit/"+postList[index]['id'])
+                        button 수정
+
+                td
+                    a(href="/APIV0.2/post/delete/"+postList[index]['id'])
+                        button 삭제
 
     a(href="/APIV0.2/post/edit") 글쓰기 페이지로
